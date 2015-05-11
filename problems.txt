@@ -26,3 +26,29 @@ function oSort(arr)
 2、indexOf() 返回某个指定的字符串值在字符串中首次出现的位置 深入研究
 
 3、http://witmax.cn/javascript-difference-summary.html IE与FF脚本兼容性问题
+
+4、cloneNode 用法
+
+5、JavaScript中如何对一个对象进行深度clone
+  function cloneObject(o) {
+      if(!o || 'object' !== typeof o) {
+          return o;
+      }
+      var c = 'function' === typeof o.pop ? [] : {};
+      var p, v;
+      for(p in o) {
+          if(o.hasOwnProperty(p)) {
+              v = o[p];
+              if(v && 'object' === typeof v) {
+                  c[p] = Ext.ux.clone(v);
+              }
+              else {
+                  c[p] = v;
+              }
+          }
+      }
+      return c;
+  };
+
+6、var e = window.event || evt;
+   var tag = e["target"] || e["srcElement"];

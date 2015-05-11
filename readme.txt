@@ -38,64 +38,9 @@ canceBubble   return false
 
 7、indexOf() 返回某个指定的字符串值在字符串中首次出现的位置
 
---------------------------------------------------------------
-14、鼠标单击Button1后将Button1移动到Button2的后面<div> <input type=”button” id =”button1″ value=”1″ onclick=”???”> <input type=”button” id =”button2″ value=”2″ /”> </div>
-<div>
-   <input type="button" id ="button1" value="1" onclick="moveBtn(this);">
-   <input type="button" id ="button2" value="2" />
-</div>
-<script type="text/javascript">
-function moveBtn(obj) {//思路：先克隆一个，然后挂上，然后删除原来的那个
-   var clone = obj.cloneNode(true);
-   var parent = obj.parentNode;
-   parent.appendChild(clone);
-   parent.removeChild(obj);
-}
-</script>
-
-15、JavaScript有哪几种数据类型
-简单：Number，Boolean，String，Null，Undefined
-复合：Object，Array，Function
-
-
-16、JavaScript中如何对一个对象进行深度clone
-function cloneObject(o) {
-    if(!o || 'object' !== typeof o) {
-        return o;
-    }
-    var c = 'function' === typeof o.pop ? [] : {};
-    var p, v;
-    for(p in o) {
-        if(o.hasOwnProperty(p)) {
-            v = o[p];
-            if(v && 'object' === typeof v) {
-                c[p] = Ext.ux.clone(v);
-            }
-            else {
-                c[p] = v;
-            }
-        }
-    }
-    return c;
-};
-
-17、请实现，鼠标点击页面中的任意标签，alert该标签的名称．（注意兼容性）
-
-<style>
-div{ background:#0000FF;width:100px;height:100px;}
-span{ background:#00FF00;width:100px;height:100px;}
-p{ background:#FF0000;width:100px;height:100px;}
-</style>
-<script type="text/javascript">
-document.onclick = function(evt){
- var e = window.event || evt;
- var tag = e["target"] || e["srcElement"];
- alert(tag.tagName);
-};
-</script>
-<div id="div"><span>SPAN</span>DIV</div>
-<span>SPAN</span>
-<p>P</p>
+8、JavaScript有哪几种数据类型
+简单:Number，Boolean，String，Null，Undefined
+复合:Object，Array，Function
 
 18、请编写一个JavaScript函数 parseQueryString，它的用途是把URL参数解析为一个对象
 
