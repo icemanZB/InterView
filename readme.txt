@@ -32,3 +32,11 @@ canceBubble   return false
 
    宿主为浏览器自带的document,window 等
 
+6、在怪异模式和传统模式下区别，这个平时都是用xhtml模式，
+
+   在怪异模式下 IE的宽=width+padding+margin, xhtml模式=width
+
+7、indexOf() 返回某个指定的字符串值在字符串中首次出现的位置
+
+
+

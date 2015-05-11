@@ -1,0 +1,28 @@
+1、arr.splice 什么意思
+function oSort(arr)
+{
+    if(arr.length<=1){
+        return arr;
+    }
+
+    var left=[];
+
+    var right=[];
+
+    var oNum = Math.floor(arr.length/2);
+
+    var oNumVode = arr.splice(oNum,1);
+
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]<oNumVode){
+            left.push(arr[i]);
+        }else{
+            right.push(arr[i]);
+        }
+    }
+    return oSort(left).concat([oNumVode],oSort(right))
+}
+
+2、indexOf() 返回某个指定的字符串值在字符串中首次出现的位置 深入研究
+
+3、http://witmax.cn/javascript-difference-summary.html IE与FF脚本兼容性问题
