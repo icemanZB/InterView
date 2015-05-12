@@ -7,7 +7,7 @@ node.js
 
 让利用事件冒泡的原理,让自己的所触发的事件,让他的父元素代替执行!
 
-2、闭包是什么，有什么特性，对页面有什么影响
+2、闭包是什么,有什么特性,对页面有什么影响
 
 闭包就是能够读取其他函数内部变量的函数。
 
@@ -15,14 +15,13 @@ node.js
 
 canceBubble   return false
 
-
 4、解释jsonp的原理，以及为什么不是真正的ajax
 
-   动态创建script标签，回调函数
+   动态创建script标签,回调函数
 
    Ajax是页面无刷新请求数据操作
 
-   跨域问题简单的理解就是因为JS同源策略的限制，a.com域名下的JS无法操作b.com或c.a.com下的对象
+   跨域问题简单的理解就是因为JS同源策略的限制,a.com域名下的JS无法操作b.com或c.a.com下的对象
 
 5、javascript的本地对象，内置对象和宿主对象
 
@@ -39,18 +38,14 @@ canceBubble   return false
 7、indexOf() 返回某个指定的字符串值在字符串中首次出现的位置
 
 8、JavaScript有哪几种数据类型
-简单:Number,Boolean,String,Null,undefined
-复合:Object,Array,Function
+基本: Number,Boolean,String,Null,undefined
+复合: Object,Array,Function
 
-18、请编写一个JavaScript函数 parseQueryString，它的用途是把URL参数解析为一个对象
-
-19、ajax 底层？
-
-20、documen.write和 innerHTML的区别
+9、documen.write和 innerHTML的区别
 document.write只能重绘整个页面
 innerHTML可以重绘页面的一部分
 
-21、 前端开发的优化问题
+10、 前端开发的优化问题
 （1） 减少http请求次数：css spirit,data uri
 （2） JS，CSS源码压缩
 （3） 前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数
@@ -64,8 +59,26 @@ innerHTML可以重绘页面的一部分
 （11） 图片预载
 （12） 避免在页面的主体布局中使用table，table要等其中的内容完全下载之后才会显示出来，显示比div+css布局慢
 
+11、 不换行必须设置(  AC  )
+   A.word-break        B.letter-spacing        C.white-space       D.word-spacing
 
-22、 javascript基本数据类型的有？
+12、
+font-style:italic;
 
+font-family:"Lucida Grande",sans-serif;
+
+font-size:1em;
+
+font-weight:bold;
+
+font-variant:small-caps;
+
+line-height:140%;
+
+font:italic bold small-caps 1em/140% "lucida Grande",sans-serif;
+
+13、简述border:none以及border:0的区别，并给出使用建议。
+答：border:none表示边框样式无,border:0表示边框宽度为0;当定义了border:none,即隐藏了边框的显示,实际就是边框宽度为0.
+当定义边框时,必须定义边框的显示样式.因为边框默认样式为不显示none,所以仅设置边框宽度,由于样式不存在,边框的宽度也自动被设置为0.
 
 

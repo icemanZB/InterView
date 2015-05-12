@@ -52,3 +52,22 @@ function oSort(arr)
 
 6、var e = window.event || evt;
    var tag = e["target"] || e["srcElement"];
+
+7、ajax 底层？
+
+8、闭包在看下
+
+function Foo() {
+    var i = 0;
+    return function() {
+        console.log(i++);
+    }
+}
+
+var f1 = Foo(),
+    f2 = Foo();
+f1();
+f1();
+f2();
+
+9、call apply 区别
