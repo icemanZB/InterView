@@ -39,8 +39,8 @@ canceBubble   return false
 7、indexOf() 返回某个指定的字符串值在字符串中首次出现的位置
 
 8、JavaScript有哪几种数据类型
-简单:Number，Boolean，String，Null，Undefined
-复合:Object，Array，Function
+简单:Number,Boolean,String,Null,undefined
+复合:Object,Array,Function
 
 18、请编写一个JavaScript函数 parseQueryString，它的用途是把URL参数解析为一个对象
 
