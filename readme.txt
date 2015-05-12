@@ -86,4 +86,21 @@ font:italic bold small-caps 1em/140% "lucida Grande",sans-serif;
 答：border:none表示边框样式无,border:0表示边框宽度为0;当定义了border:none,即隐藏了边框的显示,实际就是边框宽度为0.
 当定义边框时,必须定义边框的显示样式.因为边框默认样式为不显示none,所以仅设置边框宽度,由于样式不存在,边框的宽度也自动被设置为0.
 
+14、为一个图片设置成背景图像后，设置背景图像在纵向和横向上平铺，下面哪个是实现该功能的？ (单选)
+   A、no-repeat B、repeat C、repeat-x D、repeat-y
+   考点：css的背景background (repeat)
+
+15、想要设置一个对象外的线条轮廓的样式为虚线边框，用_______________实现该功能。
+   考点：css的轮廓outline (outline-style: dashed)
+
+16、在css中，如果想要阻止计数器增加的，用__________________来实现。
+   考点：css的内容content (counter-increment : none)
+
+17、在编写css样式的时候，如果想要设置标记容器和主容器之间的补白，用_______________来表示。
+   考点：css的列表 (marker-offset)
+
+18、如果想设置一个对象内文本的流动和方向，用_______________标签来实现，该标签有两个值，
+   分别是_____________、______________。
+   考点：css的文本Text （text-layout-flow，horizontal、vertical-ideographic）
+
 
