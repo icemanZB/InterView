@@ -2,6 +2,11 @@ http://www.nowcoder.com/ 面试题测试
 bootstrap 响应式布局
 backbone
 node.js
+http://www.jikexueyuan.com/ 极客学院
+
+http://segmentfault.com/a/1190000002627927 / http://www.cnblogs.com/coco1s/p/4029708.html 必须看 js篇
+
+http://www.jb51.net/article/56847.htm 必须看 css篇
 
 1、事件委托是什么?
 
