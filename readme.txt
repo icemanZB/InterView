@@ -53,7 +53,8 @@ innerHTML可以重绘页面的一部分
 10、 前端开发的优化问题
 （1） 减少http请求次数：css spirit,data uri
 （2） JS，CSS源码压缩
-（3） 前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数
+（3） 前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，
+     每次操作本地变量，不用请求，减少请求次数
 （4） 用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能
 （5） 用setTimeout来避免页面失去响应
 （6） 用hash-table来优化查找
@@ -84,7 +85,8 @@ font:italic bold small-caps 1em/140% "lucida Grande",sans-serif;
 
 13、简述border:none以及border:0的区别，并给出使用建议。
 答：border:none表示边框样式无,border:0表示边框宽度为0;当定义了border:none,即隐藏了边框的显示,实际就是边框宽度为0.
-当定义边框时,必须定义边框的显示样式.因为边框默认样式为不显示none,所以仅设置边框宽度,由于样式不存在,边框的宽度也自动被设置为0.
+当定义边框时,必须定义边框的显示样式.因为边框默认样式为不显示none,所以仅设置边框宽度,由于样式不存在,
+边框的宽度也自动被设置为0.
 
 14、为一个图片设置成背景图像后，设置背景图像在纵向和横向上平铺，下面哪个是实现该功能的？ (单选)
    A、no-repeat B、repeat C、repeat-x D、repeat-y
