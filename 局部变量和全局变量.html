@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>局部变量和全局变量</title>
+    <script type="text/javascript">
+        var f = true;
+        if (f === true) {
+            var a = 10;
+        }
+
+        function fn() {
+            var b = 20;
+            c = 30;
+        }
+
+        fn();
+        console.log(a); // 10
+        console.log(b); // 报错
+        console.log(c); // 30
+
+        /*
+        *
+        * function内的新声明的变量才是局部变量,而没有用var声明的变量在哪里都是全局变量。
+        * 只有function(){}内新声明的才能是局部变量,while{…}、if{…}、for(..) 之内的都是全局变量
+        *
+        * */
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
