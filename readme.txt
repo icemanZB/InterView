@@ -44,7 +44,7 @@ canceBubble   return false
 
 8、JavaScript有哪几种数据类型
 基本: Number,Boolean,String,Null,undefined
-复合: Object,Array,Function
+引用: Object,Array,Function
 
 9、documen.write和 innerHTML的区别
 document.write只能重绘整个页面
