@@ -79,6 +79,9 @@ font-weight:bold;
 
 font-variant:small-caps;
 
+font-variant:small-caps; 属性设置小型大写字母的字体显示文本,这意味着所有的小写字母均会被转换为大写,
+                         但是所有使用小型大写字体的字母与其余文本相比,其字体尺寸更小。
+
 line-height:140%;
 
 font:italic bold small-caps 1em/140% "lucida Grande",sans-serif;
@@ -93,7 +96,7 @@ font:italic bold small-caps 1em/140% "lucida Grande",sans-serif;
    考点：css的背景background (repeat)
 
 15、想要设置一个对象外的线条轮廓的样式为虚线边框，用_______________实现该功能。
-   考点：css的轮廓outline (outline-style: dashed)
+   考点：css的轮廓outline (outline-style: dashed) 注释：如果规定了 !DOCTYPE，则 IE8 支持 outline 属性。
 
 16、在css中，如果想要阻止计数器增加的，用__________________来实现。
    考点：css的内容content (counter-increment : none)
