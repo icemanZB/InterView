@@ -108,4 +108,62 @@ font:italic bold small-caps 1em/140% "lucida Grande",sans-serif;
    分别是_____________、______________。
    考点：css的文本Text （text-layout-flow，horizontal、vertical-ideographic）
 
+19、编码和解码URL？
 
+回答:我们可以使用以下方法实现URL的编码和解码。
+encodeURIComponent(url) and decodeURIComponent(url)
+
+20、问题:如何禁用浏览器的前进后退按钮？
+
+<script type="text/javascript">
+$(document).ready(function() {
+    window.history.forward(1);
+    // OR
+    window.history.forward(-1);
+});
+</script>
+
+
+21、jQuery对象访问  http://www.cnblogs.com/HunXw/archive/2011/10/10/2205295.html
+
+(1)each(callback)以每一个匹配的元素作为上下文来执行一个函数
+
+(2)length/size()jQuery对象中元素的个数
+
+(3)selector返回选择此元素的选择器(用于插件开发)
+
+(4)context返回选择此元素的时此元素所在的DOM节点内容(用于插件开发)
+
+(5)eq(position)取得元素中某个位置的元素
+
+(6)get()取得所有匹配DOM元素集合
+
+(7)get(index)在所有匹配的DOM元素集合中取得其中一个匹配的元素
+
+(8)index(subject)搜索与参数表示的对象匹配的元素,并返回相应元素的索引值
+
+
+22、在编写页面的时候,如果想要获取指定元素在当前窗口的相对偏移,用_________来实现,该方法的返回值有两个属性
+    分别是________和__________。
+
+   考点: jquery的css处理 (offset,top,left)
+
+23、 Jquery获取当前屏幕的宽度、高度
+<script type="text/javascript">
+$(document).ready(function(){
+    alert($(window).height()); //浏览器当前窗口可视区域高度
+    alert($(document).height()); //浏览器当前窗口文档的高度
+    alert($(document.body).height());//浏览器当前窗口文档body的高度
+    alert($(document.body).outerHeight(true));//浏览器当前窗口文档body的总高度 包括border padding margin
+    alert($(window).width()); //浏览器当前窗口可视区域宽度
+    alert($(document).width());//浏览器当前窗口文档对象宽度
+    alert($(document.body).width());//浏览器当前窗口文档body的高度
+    alert($(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin
+});
+</script>
+
+其中$(window).height()=$(document).height()=
+$(document.body).outerHeight()=$(document.body).height()+padding+margin+border
+
+
+24、在jquery中指定一个类,如果存在就执行删除功能,如果不存在就执行添加功能 C、toggleClass(class)
