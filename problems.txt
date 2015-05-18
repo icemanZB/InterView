@@ -124,12 +124,4 @@ f2();
 31¡¢var f = function g(){ return 23; };
    typeof g();//g is not defined
 
-  var foo = 1;
-  function bar() {
-    foo = 10;
-    return;
-    function foo() {}
-  }
-  bar();
-  console.log(foo);//1
 
