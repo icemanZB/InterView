@@ -121,7 +121,24 @@ f2();
    detach() 会保持对过去被解除元素的跟踪,因此它可以被取消解除,
    而 remove() 方法则会保持过去被移除对象的引用.
 
+http://www.cnblogs.com/dolphinX/p/3524977.html
+
 31、var f = function g(){ return 23; };
    typeof g();//g is not defined
 
 32、toFixed() //小数点后的指定位数来将数字转换为字符串，从不使用科学记数法
+
+33、var x=1;
+   if(function f(){}){
+       x+=typeof f;
+   }
+   console.log(x);//'1undefined'
+
+34、(function f(f){
+       return typeof f();// "number"
+   })(function(){return 1;});
+   简单说一下，当函数执行有命名冲突的时候，函数依次填入 变量＝》函数＝》参数 ？？
+
+35、 对象的实例？函数实例？
+
+36 ++ -- 研究下
