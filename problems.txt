@@ -142,3 +142,5 @@ http://www.cnblogs.com/dolphinX/p/3524977.html
 35、 对象的实例？函数实例？
 
 36 ++ -- 研究下
+
+37 http://www.cnblogs.com/dolphinX/p/3529249.html 有待研究
