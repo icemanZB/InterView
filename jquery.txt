@@ -213,6 +213,14 @@ DOM转jquery : $(DOM)
 
    考点: jquery的多库共存 ($.noConflict(extreme))
 
+   $.noConflict();
+   jQuery("p").text("I am jquery and I am working&hellip;");
+
+   或者使用别名代替：
+
+   var jq = $.noConflict();
+   jq("p").text("I am invoked using jquery shortcut&hellip;");
+
 26、下面哪几种是jquery中表单的对象属性？(多选)
 
    A、:checked B、: enabled C、:hidden D、:selected E、:file F、: disabled

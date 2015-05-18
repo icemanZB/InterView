@@ -167,3 +167,25 @@ $(document.body).outerHeight()=$(document.body).height()+padding+margin+border
 
 
 24、在jquery中指定一个类,如果存在就执行删除功能,如果不存在就执行添加功能 C、toggleClass(class)
+
+25、CDN（内容分发网络）是什么？
+   在开发Web页面，考虑最多的问题之一是页面在客户端电脑的响应：时间越短，用户体验越好。
+   而制约用户体验的关键因素之一是浏览器下载Web文件大小，包括*.html、图片、*.js、*.css等文件。
+   为了最大化复用和节约带宽，故CDN应运而生：其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，
+   使内容传输的更快、更稳定。其目的是使用户可就近取得所需内容，解决 Internet网络拥挤的状况，提高用户访问网站的响应速度。
+
+推荐使用官方的CDN节点，使用代码如下：
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+还有Google提供的jQuery CDN：
+
+<script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+同时微软也提供了jQuery CDN的节点：
+
+<script type="text/javascript"
+    src="http://ajax.microsoft.com/ajax/jquery/jquery-1.9.1.min.js">
+</script>
