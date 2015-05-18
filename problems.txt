@@ -124,4 +124,4 @@ f2();
 31、var f = function g(){ return 23; };
    typeof g();//g is not defined
 
-
+32、toFixed() //小数点后的指定位数来将数字转换为字符串，从不使用科学记数法
