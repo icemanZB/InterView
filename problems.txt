@@ -1,5 +1,7 @@
 http://web.jobbole.com/82251/ js 面试题目
 
+http://blog.jobbole.com/29269/
+
 JavaScript权威指南
 
 1、arr.splice 什么意思
