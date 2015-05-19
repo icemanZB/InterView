@@ -23,9 +23,7 @@
 
             var oNum = Math.floor(arr.length / 2);
 
-            var pivot = arr.splice(oNum, 1)[0];
-
-            console.info(arr);
+            var pivot = arr.splice(oNum, 1)[0]; // 使用splice 为了剔除选中的"基准"
 
             for (var i = 0; i < arr.length; i++) {
                 if (arr[i] < pivot) {
@@ -40,9 +38,9 @@
 
         var arr = [85, 24, 63, 45, 17, 31, 96, 50];
 
-        //  console.info(quickSort(arr));
+        quickSort(arr);
 
-        // 方法2
+        // 方法2 http://www.cnblogs.com/aaronjs/p/3539538.html
 
         function swap(items, firstIndex, secondIndex) {
             var temp = items[firstIndex];
@@ -70,15 +68,15 @@
             return i;
         }
 
-        function quickSort(items, left, right) {
+        function quickSort2(items, left, right) {
             var index;
             if (items.length > 1) {
                 index = partition(items, left, right);
                 if (left < index - 1) {
-                    quickSort(items, left, index - 1);
+                    quickSort2(items, left, index - 1);
                 }
                 if (index < right) {
-                    quickSort(items, index, right);
+                    quickSort2(items, index, right);
                 }
 
             }
@@ -87,9 +85,13 @@
 
         var items = [4, 2, 6, 5, 3, 9];
         // first call
-        var result = quickSort(items, 0, items.length - 1);
+        var result = quickSort2(items, 0, items.length - 1);
 
-        console.info(result);
+        // console.info(result);
+
+        var test = [24].concat(31, [])
+
+        // alert(test);
 
     </script>
 </head>
