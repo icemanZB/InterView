@@ -75,10 +75,6 @@ http://www.cnblogs.com/dolphinX/p/3524977.html
    }
    console.log(x);//'1undefined'
 
-34、(function f(f){
-       return typeof f();// "number"
-   })(function(){return 1;});
-   简单说一下，当函数执行有命名冲突的时候，函数依次填入 变量＝》函数＝》参数 ？？
 
 35、 对象的实例？函数实例？
 
