@@ -7,46 +7,13 @@ http://www.cnblogs.com/muyou/archive/2012/06/26/2563930.html
 JavaScript权威指南
 
 
-5、JavaScript中如何对一个对象进行深度clone
-  function cloneObject(o) {
-      if(!o || 'object' !== typeof o) {
-          return o;
-      }
-      var c = 'function' === typeof o.pop ? [] : {};
-      var p, v;
-      for(p in o) {
-          if(o.hasOwnProperty(p)) {
-              v = o[p];
-              if(v && 'object' === typeof v) {
-                  c[p] = Ext.ux.clone(v);
-              }
-              else {
-                  c[p] = v;
-              }
-          }
-      }
-      return c;
-  };
-
-6、var e = window.event || evt;
-   var tag = e["target"] || e["srcElement"];
+5、JavaScript中如何对一个对象进行深度clone?
 
 7、ajax 底层？
 
 8、闭包在看下
 
-function Foo() {
-    var i = 0;
-    return function() {
-        console.log(i++);
-    }
-}
 
-var f1 = Foo(),
-    f2 = Foo();
-f1();
-f1();
-f2();
 
 9、call apply 区别
 
