@@ -69,11 +69,6 @@ http://www.cnblogs.com/dolphinX/p/3524977.html
 
 32、toFixed() //小数点后的指定位数来将数字转换为字符串，从不使用科学记数法
 
-33、var x=1;
-   if(function f(){}){
-       x+=typeof f;
-   }
-   console.log(x);//'1undefined'
 
 
 35、 对象的实例？函数实例？

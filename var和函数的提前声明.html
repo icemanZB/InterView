@@ -45,6 +45,11 @@
          *
          * */
 
+        if(function f(){}){
+           // alert(f) // ReferenceError: f is not defined
+            x+=typeof f;
+        }
+        console.log(x); // '1undefined'
 
 
     </script>
