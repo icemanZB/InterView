@@ -13,9 +13,6 @@ JavaScript权威指南
 
 8、闭包在看下
 
-join() 研究下
-
-9、call apply 区别
 
 10、html 语义话
 
