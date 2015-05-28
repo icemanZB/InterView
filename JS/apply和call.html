@@ -150,8 +150,8 @@
         // ([param1,param2,param3] 转换为 param1,param2,param3)
         // 利用Apply的参数数组化来提高
 
-        console.info(Math.max(5, 8))   //8
-        console.info(Math.max(5, 7, 9, 3, 1, 6))   //9
+        console.info(Math.max(5, 8));   //8
+        console.info(Math.max(5, 7, 9, 3, 1, 6));   //9
 
         // 但是在很多情况下,我们需要找出数组中最大的元素
         // var arr=[5,7,9,1]
@@ -174,9 +174,9 @@
             return Math.max.apply(null, arr);
         }
 
-        var arr1=new Array("1","2","3");
+        var arr1=["1","2","3"];
 
-        var arr2=new Array("4","5","6");
+        var arr2=["4","5","6"];
 
         Array.prototype.push.apply(arr1,arr2);
 
