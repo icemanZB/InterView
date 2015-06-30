@@ -36,7 +36,7 @@ canceBubble   return false
 
    宿主为浏览器自带的document,window 等
 
-6、在怪异模式和传统模式下区别，这个平时都是用xhtml模式，
+6、在怪异模式和传统模式下区别，这个平时都是用xhtml模式
 
    在怪异模式下 IE的宽=width+padding+margin, xhtml模式=width
 
@@ -46,7 +46,7 @@ canceBubble   return false
 基本: Number,Boolean,String,Null,undefined
 引用: Object,Array,Function
 
-9、documen.write和 innerHTML的区别
+9、document.write和 innerHTML的区别
 document.write只能重绘整个页面
 innerHTML可以重绘页面的一部分
 
