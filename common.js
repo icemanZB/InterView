@@ -11,3 +11,20 @@ function getPageScroll() {
     return pageScrollTop;
 }
 
+/**
+ * 类数组转换为数组
+ * @param  类数组
+ * @return 数组
+ */
+function toArray(obj){
+	try {
+		return Array.prototype.slice.call(obj);
+	} catch (e) {
+		var arr = [];
+		for (var i = 0, len = obj.length; i < len; i++) {
+			// arr.push(s[i]);
+			arr[i] = s[i]; // 这样比push快
+		}
+		return arr;
+	}
+}
