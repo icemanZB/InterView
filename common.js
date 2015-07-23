@@ -18,6 +18,7 @@ function getPageScroll() {
  */
 function toArray(obj){
 	try {
+		// Array.prototype.slice.call(obj,0)
 		return Array.prototype.slice.call(obj);
 	} catch (e) {
 		var arr = [];
