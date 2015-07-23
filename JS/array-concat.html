@@ -4,41 +4,20 @@
     <meta charset="UTF-8">
     <title>concat</title>
     <script type="text/javascript">
-        //concat() 方法用于连接两个或多个数组。
-        // 该方法不会改变现有的数组,而仅仅会返回被连接数组的一个副本。
-
+        // concat() 方法用于连接两个或多个数组。
+        // 该方法不会改变现有的数组,返回被连接后的数组
         var arr = [1,2,3];
-        console.info(arr);
-        console.info(arr.concat(4,5));
+        console.info(arr);  // [1,2,3]
+        console.info(arr.concat(4,5));  // [1,2,3,4,5]
 
-        var arr2 = new Array(3)
-        arr2[0] = "George"
-        arr2[1] = "John"
-        arr2[2] = "Thomas"
+        var arr2 = ['George','John','Thomas'];
+        var arr3 = ['James','Adrew','Martin'];
 
-        var arr3 = new Array(3)
-        arr3[0] = "James"
-        arr3[1] = "Adrew"
-        arr3[2] = "Martin"
+        console.info(arr2.concat(arr3));  // ["George", "John", "Thomas", "James", "Adrew", "Martin"]
 
-        console.info(arr2.concat(arr3));
-
-
-        var arr4 = new Array(3)
-        arr4[0] = "George"
-        arr4[1] = "John"
-        arr4[2] = "Thomas"
-
-        var arr5 = new Array(3)
-        arr5[0] = "James"
-        arr5[1] = "Adrew"
-        arr5[2] = "Martin"
-
-        var arr6 = new Array(2)
-        arr6[0] = "William"
-        arr6[1] = "Franklin"
-
-        console.info(arr4.concat(arr5,arr6));
+        var arr4 = ['William','Franklin'];
+        // 链接3个数组
+        console.info(arr2.concat(arr3,arr4));
 
 
     </script>
