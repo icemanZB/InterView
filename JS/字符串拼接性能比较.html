@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>字符串拼接性能比较</title>
+	<script type="text/javascript" src='../data.js'></script>
+	<script type="text/javascript">
+		var sHtml=[];
+		console.time('strPush');
+            for (var attr in data) {
+                sHtml.push('<div class="photo photo_front" id="photo_' + attr + '">');
+                sHtml.push('<div class="photo-wrap">');
+                sHtml.push('<div class="side side-front">');
+                sHtml.push('<p class="image"><img src="img/' + data[attr].img + '" alt=""/></p>')
+                sHtml.push('<p class="caption">' + data[attr].caption + '</p>');
+                sHtml.push('</div>');
+                sHtml.push('<div class="side side-back">');
+                sHtml.push('<p class="desc">' + data[attr].info_i + '</p>');
+                sHtml.push('</div>');
+                sHtml.push('</div>');
+                sHtml.push('</div>');
+            }
+
+            sHtml.join('');
+            console.timeEnd('strPush');
+
+            var str='';
+            console.time('str');
+            for (var attr in data) {
+                str +='<div class="photo photo_front" id="photo_' + attr + '">';
+                str +='<div class="photo-wrap">';
+                str +='<div class="side side-front">';
+                str +='<p class="image"><img src="img/' + data[attr].img + '" alt=""/></p>';
+                str +='<p class="caption">' + data[attr].caption + '</p>';
+                str +='</div>';
+                str +='<div class="side side-back">';
+                str +='<p class="desc">' + data[attr].info_i + '</p>';
+                str +='</div>';
+                str +='</div>';
+                str +='</div>';
+            }
+            console.timeEnd('str');  // 字符串拼接快
+	</script>
+</head>
+<body>
+
+</body>
+</html>
