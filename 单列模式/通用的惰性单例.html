@@ -9,6 +9,7 @@
     		var getSingle = function(fn) {
     			var result;
     			return function() {
+    				// fn 代替 this  改变 fn中的 this 指向为当前的 this
     				return result || (result = fn.apply(this, arguments));
     			};
     		};
