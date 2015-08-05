@@ -33,12 +33,12 @@
                 }
             }
 
-            return quickSort(left).concat([pivot], quickSort(right));
+            return quickSort(left).concat(pivot, quickSort(right));
         }
 
         var arr = [85, 24, 63, 45, 17, 31, 96, 50];
 
-        quickSort(arr);
+        console.log(quickSort(arr));
 
         // 方法2 http://www.cnblogs.com/aaronjs/p/3539538.html
 
