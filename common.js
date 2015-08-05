@@ -66,7 +66,7 @@ function quickSort(arr) {
 	var aRight = [];
 
 	var oNum = Math.floor(arr.length / 2);
-	var pivot = arr.splice(oNum, 1);  // 剔除选中的"基准"
+	var pivot = arr.splice(oNum, 1); // 剔除选中的"基准"
 
 	for (var i = 0; i < arr.length; i++) {
 		if (arr[i] < pivot) {
@@ -77,4 +77,13 @@ function quickSort(arr) {
 	}
 
 	return quickSort(left).concat(pivot, quickSort(aRight));
+}
+
+/**
+ * 判断是否是string
+ * @param  str
+ * @return Boolean
+ */
+function isString(str) {
+	return (typeof str == "string" || str.constructor == String);
 }
