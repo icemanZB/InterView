@@ -87,3 +87,54 @@ function quickSort(arr) {
 function isString(str) {
 	return (typeof str == "string" || str.constructor == String);
 }
+
+/**
+ * 判断是否是JSON
+ * @return Boolean
+ */
+function isJSON() {
+	return typeof(obj) == "object" && Object.prototype.toString.call(obj).toLowerCase() == "[object object]" && !obj.length;
+}
+
+/**
+ * 获取随机数
+ * @param  开始(包括)
+ * @param  结束(包括)
+ * @return 数字
+ */
+function getRandom(start, end) {
+	var max = Math.max(start, end);
+	var min = Math.min(start, end);
+
+	var total = max - min + 1;
+	return Math.floor(Math.random() * total + min);
+
+}
+
+/**
+ * 获取当前浏览器路径上的参数值
+ * @param  key
+ * @return value
+ */
+function parseQueryString(parm) {
+	var sValue = location.search.match(new RegExp("[\?\&]" + parm + "=([^\&]*)(\&?)", "i"));
+	return sValue ? decodeURI(sValue[1]) : decodeURI(sValue);
+}
+
+/**
+ * 传入Url返回键值对
+ * @param  url
+ * @return object
+ */
+function parseUrlQueryString(url) {
+	var str = url.split("?")[1],
+		items = str.split("&");
+	var result = {},
+			arr = [];
+	for (var i = 0; i < items.length; i++) {
+		arr = items[i].split("=");
+		result[arr[0]] = arr[1];
+	}
+
+	return result;
+}

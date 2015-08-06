@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <title>高度自适应布局</title>
     <style type="text/css">
-		html, body {
-			height: 100%;
-		}
-		body, div {
-			margin: 0;
-			padding: 0;
-			color: #ff0;
-		}
-		* html {
-			padding-top: 100px;  /* for ie6 */
-		}
-		.top {
-			background-color: #36c;
-			height: 100px;
-		}
+			html, body {
+				height: 100%;
+			}
+			body, div {
+				margin: 0;
+				padding: 0;
+				color: #ff0;
+			}
+			* html {
+				padding-top: 100px;  /* for ie6 */
+			}
+			.top {
+				background-color: #36c;
+				height: 100px;
+			}
 
-		/* for ie6 */
-		* html .top {
-			background: #36C;
-			height: 100px;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-		.main {
-			background-color: #f90;
-			width: 100%;
-			position: absolute;			/* 把 top 设为100px, bottom 设为0,就达到了高度自适应 */
-			top: 100px;
-			bottom: 0;
-		}
+			/* for ie6 */
+			* html .top {
+				background: #36C;
+				height: 100px;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+			.main {
+				background-color: #f90;
+				width: 100%;
+				position: absolute;			/* 把 top 设为100px, bottom 设为0,就达到了高度自适应 */
+				top: 100px;
+				bottom: 0;
+			}
 
-		/* for ie6 */
-		* html .main {
-			background: #F90;
-			position: static;
-			height: 100%;
-		}
+			/* for ie6 */
+			* html .main {
+				background: #F90;
+				position: static;
+				height: 100%;
+			}
     </style>
 </head>
 <body>
