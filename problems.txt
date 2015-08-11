@@ -27,10 +27,6 @@ JavaScript权威指南
 
 16、 盒模型
 
-17、事件委托
-
-18、this掌握
-
 19、兼容写法 (能力检测)
 
 20、 css计数器
@@ -39,32 +35,17 @@ JavaScript权威指南
 
 22、 面向对象
 
-23、  $.extend();  用法
-
-24、appendTo() after() 区别
-
-25、 jqery 事件处理
 
 26、 jquery 动画 animate(params, options) slideUp()
 
-27、jquery 阻止这些默认的行为
-
-28、jQuery 阻止冒泡事件
 
 29、子元素选择器 和后代选择器元素有什么区别？
 
-30、jQuery中 detach() 和 remove() 方法的区别是什么?
-   尽管 detach() 和 remove() 方法都被用来移除一个DOM元素, 两者之间的主要不同在于
-   detach() 会保持对过去被解除元素的跟踪,因此它可以被取消解除,
-   而 remove() 方法则会保持过去被移除对象的引用.
 
 http://www.cnblogs.com/dolphinX/p/3524977.html
 
 31、var f = function g(){ return 23; };
    typeof g();//g is not defined
-
-32、toFixed() //小数点后的指定位数来将数字转换为字符串，从不使用科学记数法
-
 
 
 35、 对象的实例？函数实例？
