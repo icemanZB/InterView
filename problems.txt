@@ -6,12 +6,8 @@ http://www.cnblogs.com/muyou/archive/2012/06/26/2563930.html
 
 JavaScript权威指南
 
-
 5、JavaScript中如何对一个对象进行深度clone?
 
-7、ajax 底层？
-
-8、闭包在看下
 
 10、html 语义话
 
@@ -19,11 +15,7 @@ JavaScript权威指南
 
 12、 css hacks
 
-13、 XMLHttpRequest
-
 14、http状态码 304 缓存 500 404
-
-15、圣杯布局
 
 16、 盒模型
 
@@ -35,9 +27,7 @@ JavaScript权威指南
 
 22、 面向对象
 
-
 26、 jquery 动画 animate(params, options) slideUp()
-
 
 29、子元素选择器 和后代选择器元素有什么区别？
 
