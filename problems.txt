@@ -18,8 +18,6 @@ JavaScript权威指南
 
 26、 jquery 动画 animate(params, options) slideUp()
 
-29、子元素选择器 和后代选择器元素有什么区别？
-
 http://www.cnblogs.com/dolphinX/p/3524977.html
 
 37 http://www.cnblogs.com/dolphinX/p/3529249.html 有待研究

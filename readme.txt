@@ -301,7 +301,7 @@ $(document.body).outerHeight()=$(document.body).height()+padding+margin+border
 
 27、doctype(文档类型)的作用是什么?你知道多少种文档类型?
 
-    <!DOCTYPE>声明位于文档中的最前面的位置，处于<html>标签之前,此标签可告知浏览器文档使用哪种HTML或XHTML规范。
+    <!DOCTYPE>声明位于文档中的最前面的位置,处于<html>标签之前,此标签可告知浏览器文档使用哪种HTML或XHTML规范。
 
     该标签可声明三种 DTD 类型，分别表示严格版本、过渡版本以及基于框架的 HTML 文档。
     HTML 4.01 规定了三种文档类型：Strict、Transitional 以及 Frameset。
@@ -383,3 +383,57 @@ $(document.body).outerHeight()=$(document.body).height()+padding+margin+border
 
     瀑布流布局: 采用绝对定位来给每张图片或者模块定位
     流式布局: 采用浮动式给模块定位,可以做出响应式布局
+
+36、子元素选择器 和后代选择器元素有什么区别
+
+css选择器中的 '>' 如果不希望选择任意的后代元素,而是只选择某个元素的子元素,使用子元素选择器(Child selector)
+E > F 子元素选择器,匹配所有E元素的子元素F
+<style type="text/css">
+	h1 > strong {color:red;}  /* 就只有第一个h1下面的strong文字变红 */
+	h1 strong { color:blue;}  /* h1 下的所有strong都会变红 */
+</style>
+<h1>
+	This is <strong>very</strong> <strong>very</strong> important.
+</h1>
+<h1>This is
+	<em>really
+		<strong>very</strong>
+	</em> important.
+</h1>
+
+37、 offsetTop 和 style.top 的区别
+
+    offsetHeight:为计算后盒子的整体高度,是动态获取值 style.top:为绝对定位后的 top 值
+    offsetTop: 盒子顶部相对定位父级顶部的高度 如果父级没有定位,那就相对于整个页面
+    offsetTop 只能获取到有定位的父级
+
+    1、offsetTop 返回的是数字,而 style.top 返回的是字符串,除了数字外还带有单位: px
+    2、offsetTop 只读 而 style.top 可读写
+    3、如果没有给 HTML 元素指定过 top 样式,则 style.top 返回的是空字符串。
+
+38、jQuery中的.height()、.innerHeight()和.outerHeight()
+
+    .height() 是没有计算过的  不包括padding,不包括边框
+    获取计算后的整个高度  aLi.outerHeight() = offsetHeight
+    .innerHeight()  包括 padding 但不包括 border  document.getElementById("div1").clientHeight
+    .outerHeight()  包括 padding 和 border  还可以接受一个参数,该参数代表是否计算外边距,如果为 true 则表示计算外边距
+
+
+39、数据类型转换
+
+   []+1+3  //结果为13
+   [1]+3   //结果为13
+   null+1+3  //结果为4
+
+   转换成数字
+   +x //使用一个一元的加号运算符，这是最快的方法
+   x-0 或 x*1 //另一种形式
+   Number(x)  //使用不带new的数字构造函数进行转换
+
+   对象和函数总是被转换成NaN, undefined也会被转换成NaN, 但null会被转换成0
+   alert(+[]);  //结果为0
+   alert(+[1]); //结果为1
+   alert(+[1,2]); //结果为NaN
+   alert(+new Array(1)); //结果为0
+   alert(+new Array(1,2)); //结果为NaN
+
