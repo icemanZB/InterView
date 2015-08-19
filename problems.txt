@@ -8,16 +8,7 @@ JavaScript权威指南
 
 5、JavaScript中如何对一个对象进行深度clone?
 
-
 10、html 语义话
-
-11、doctype(文档类型)的作用是什么?你知道多少种文档类型?
-
-12、 css hacks
-
-14、http状态码 304 缓存 500 404
-
-16、 盒模型
 
 19、兼容写法 (能力检测)
 
@@ -25,22 +16,11 @@ JavaScript权威指南
 
 21、 js 中 in 操作符
 
-22、 面向对象
-
 26、 jquery 动画 animate(params, options) slideUp()
 
 29、子元素选择器 和后代选择器元素有什么区别？
 
-
 http://www.cnblogs.com/dolphinX/p/3524977.html
-
-31、var f = function g(){ return 23; };
-   typeof g();//g is not defined
-
-
-35、 对象的实例？函数实例？
-
-36 ++ -- 研究下
 
 37 http://www.cnblogs.com/dolphinX/p/3529249.html 有待研究
 

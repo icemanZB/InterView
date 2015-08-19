@@ -298,3 +298,88 @@ $(document.body).outerHeight()=$(document.body).height()+padding+margin+border
         IE: 有效
         Firefox: 无效
         解决方法: 统一使用obj.style.height = imgObj.height + 'px';
+
+27、doctype(文档类型)的作用是什么?你知道多少种文档类型?
+
+    <!DOCTYPE>声明位于文档中的最前面的位置，处于<html>标签之前,此标签可告知浏览器文档使用哪种HTML或XHTML规范。
+
+    该标签可声明三种 DTD 类型，分别表示严格版本、过渡版本以及基于框架的 HTML 文档。
+    HTML 4.01 规定了三种文档类型：Strict、Transitional 以及 Frameset。
+    XHTML 1.0 规定了三种 XML 文档类型：Strict、Transitional 以及 Frameset。
+    Standards (标准)模式(也就是严格呈现模式)用于呈现遵循最新标准的网页,而
+    Quirks(包容)模式(也就是松散呈现模式或者兼容模式)用于呈现为传统浏览器而设计的网页。
+
+28、css hacks
+
+    CSS hack技巧_， *， +， \9， !important 之类
+
+    _width 针对于ie6
+
+    *width,+width针对于ie6,7
+
+    color: red\9; /* IE8以及以下版本浏览器 */
+
+    !important 在IE中会被忽视，ie6,7,8不识别，ie9+（包括ie9）是识别的
+
+29、http状态码
+
+    Web服务器用来告诉客户端,发生了什么事,也就是一种快速解决问题的方式。
+    200：OK，服务器成功处理了请求。
+    301/302: Moved Permanently(重定向),请求的URL已移走,一个是永久转移,一个是临时转移。
+             Response中应该包含一个Location URL, 说明资源现在所处的位置。
+    304：Not Modified(未修改),客户的缓存资源是最新的,要客户端使用缓存。
+    404：HTTP/1.1 404 Not Found,服务器无法找到所请求的URL。
+    501：Internal Server Error,服务器遇到一个错误,使其无法对请求提供服务。
+    503：Service Unavailable(未提供此服务),服务器目前无法为请求服务服务,但过一段时间就可以恢复服务。
+    1XX信息性状态码。
+    2XX成功状态码。
+    3XX重定向状态码。
+    4XX客户端错误状态码。
+    5XX服务器错误状态码。
+
+30、浏览器对CSS的匹配原理
+
+    浏览器CSS匹配不是从左到右进行查找,而是从右到左进行查找。比如之前说的div#divBox p span.red{color:red;}
+    浏览器的查找顺序如下:先查找 html 中所有 class="red" 的 span 元素,找到后再查找其父辈元素中是否有p元素
+    再判断 p 的父元素中是否有 id 为 divBox 的 div 元素,如果都存在则CSS匹配上。
+    浏览器从右到左进行查找的好处是为了尽早过滤掉一些无关的样式规则和元素。
+    firefox称这种查找方式为 keyselector (关键字查询),所谓的关键字就是样式规则中最后(最右边)的规则,上面的key就是span.red。
+
+31、HTML与XHTML——二者有什么区别
+
+   1. 所有的标记都必须要有一个相应的结束标记
+   2. 所有标签的元素和属性的名字都必须使用小写
+   3. 所有的XML标记都必须合理嵌套
+   4. 所有的属性必须用引号 "" 括起来
+   5. 把所有 < 和 & 特殊符号用编码表示
+   6. 给所有属性赋一个值
+   7. 不要在注释内容中使 "–"
+   8. 图片必须有说明文字
+
+32、CSS中 link 和 @import 的区别
+
+  (1) link 属于 HTML 标签,而@import是CSS提供的
+  (2) 页面被加载的时,link 会同时被加载,而 @import 引用的 CSS 会等到页面被加载完再加载
+  (3) import 只在 IE5 以上才能识别,而 link 是 HTML 标签,无兼容问题
+  (4) link 方式的样式的权重高于 @import 的权重
+
+33、position的absolute与fixed共同点与不同点
+    共同点：
+        1. 改变行内元素的呈现方式,display 被置为block
+        2. 让元素脱离普通流,不占据空间
+        3. 默认会覆盖到非定位元素上
+    不同点:
+    absolute 的"根元素"是可以设置的,而 fixed 的"根元素"固定为浏览器窗口
+    当你滚动网页,fixed元素与浏览器窗口之间的距离是不变的
+
+34、IE盒子模型和标准W3C盒子模型的区别
+
+    可以看到 IE 盒子模型的范围也包括 margin、border、padding、content 和 标准 W3C 盒子模型不同的是:
+
+    IE 盒子模型的 content 部分包含了 border 和 padding
+    W3C盒子模型的 content 部分不包含其他部分
+
+35、瀑布流布局 或者 流式布局 是否有了解
+
+    瀑布流布局: 采用绝对定位来给每张图片或者模块定位
+    流式布局: 采用浮动式给模块定位,可以做出响应式布局
