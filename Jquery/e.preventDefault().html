@@ -5,12 +5,12 @@
     <title>e.preventDefault()阻止默认行为</title>
     <script type="text/javascript" src="../jquery-2.0.2.js"></script>
     <script type="text/javascript">
-    	$(function() {
-    		$("a").click(function(e) {
-    			console.log($(this).text());
-    			e.preventDefault(); // 取消默认行为,没有这句话的话,会跳转到baidu网站上
-    		});
-    	});
+        $(function () {
+            $("a").click(function (e) {
+                console.log($(this).text());
+                e.preventDefault(); // 取消默认行为,没有这句话的话,会跳转到百度网站上
+            });
+        });
     </script>
 </head>
 <body>
