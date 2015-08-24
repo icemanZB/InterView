@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>parseQueryString</title>
     <script type="text/javascript">
-        function parseQueryString(parm){
+        function parseQueryString(parm) {
             var sValue = location.search.match(new RegExp("[\?\&]" + parm + "=([^\&]*)(\&?)", "i"));
             return sValue ? decodeURI(sValue[1]) : decodeURI(sValue);
         }
@@ -19,8 +19,6 @@
             }
             return result;
         }
-
-
 
         var url = "http://www.taobao.com/index.php?key0=0&key1=1&key2=2";
         var obj = parseQueryString2(url);

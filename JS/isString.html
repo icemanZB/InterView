@@ -5,20 +5,20 @@
     <title>检测元素是否是String类型</title>
     <script type="text/javascript">
         /*
-        * String类型有两种生成方式: 注意第二种方式,构造函数的
-        *
-        *(1)var str = “hello world”;
-        *(2)var str2 = new String(“hello world”);
-        *
-        *
-        * */
+         * String类型有两种生成方式: 注意第二种方式,构造函数的
+         *
+         *(1)var str = "ello world";
+         *(2)var str2 = new String("hello world");
+         *
+         *
+         * */
         function isString(str) {
             return (typeof str == "string" || str.constructor == String);
         }
         var str = "";
         console.info(isString(1));  // false
         console.info(isString(str)); // true
-        var oString=new String("aaa");
+        var oString = new String("aaa");
         console.info(isString(oString)); // true
 
     </script>
