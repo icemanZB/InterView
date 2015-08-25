@@ -16,8 +16,8 @@
 
         /*
          *
-         * 给基本类型数据加属性不报错,但是引用的话返回undefined。
-         * 10+undefined返回NaN,而undefined和string相加时转变成了字符串。
+         * 给基本类型数据加属性不报错,但是引用的话返回 undefined
+         * 10+undefined返回NaN,而 undefined 和 string 相加时转变成了字符串
          *
          * */
 
@@ -32,7 +32,7 @@
         var str = 'test';// 创建字符串类型变量
         str.len = 4;// 创建包装对象,为包装对象添加属性len
         // 引用完毕,销毁包装对象
-        console.log(str.len); // 创建包装对象,查找其len属性,没有找到,返回undefined
+        console.log(str.len); // 创建包装对象,查找其len属性,没有找到,返回 undefined
 
     </script>
 </head>

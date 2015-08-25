@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <title></title>
     <style type="text/css">
-        div{ background:#0000FF;width:100px;height:100px;}
-        span{ background:#00FF00;width:100px;height:100px;}
-        p{ background:#FF0000;width:100px;height:100px;}
+        div {
+            background: #0000FF;
+            width: 100px;
+            height: 100px;
+        }
+
+        span {
+            background: #00FF00;
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            background: #FF0000;
+            width: 100px;
+            height: 100px;
+        }
     </style>
     <script type="text/javascript">
         /*
-        * 请实现,鼠标点击页面中的任意标签,alert该标签的名称（注意兼容性）
-        *
-        * */
-        document.onclick = function(evt){
+         * 请实现,鼠标点击页面中的任意标签,alert该标签的名称（注意兼容性）
+         *
+         * */
+        document.onclick = function (evt) {
             var e = window.event || evt;
             var tag = e["target"] || e["srcElement"];
             alert(tag.tagName);
@@ -24,6 +38,7 @@
 <body>
 <div id="div"><span>SPAN</span>DIV</div>
 <span>SPAN</span>
+
 <p>P</p>
 </body>
 </html>

@@ -8,7 +8,9 @@
             console.log(a);
             var a = 2;
 
-            function a() {}
+            function a() {
+            }
+
             console.log(a);
         }
 
@@ -29,7 +31,9 @@
 
         console.log(typeof fn);
 
-        function fn() {};
+        function fn() {
+        }
+        ;
         var fn;
 
 
@@ -45,7 +49,8 @@
          *
          * */
         var x = 1;
-        if (function f() {}) {
+        if (function f() {
+                }) {
             // alert(f) // ReferenceError: f is not defined
             x += typeof f;
         }
