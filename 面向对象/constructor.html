@@ -21,13 +21,13 @@
         function Bbb() {
         }
 
-        Bbb.prototype.constructor = Aaa;   // 每一个函数都会有的，都是自动生成的
+        Bbb.prototype.constructor = Bbb;   // 每一个函数都会有的，都是自动生成的
 
         // Bbb.prototype.constructor = Array;  这句可以覆盖自动生成的那句
 
-        var b1 = new Aaa();
+        var b1 = new Bbb();
 
-        console.log(b1.hasOwnProperty == Object.prototype.hasOwnProperty);  //true
+        console.log(b1.hasOwnProperty == Object.prototype.hasOwnProperty);  // true
 
 
         function Ccc() {
