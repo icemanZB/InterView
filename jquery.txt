@@ -43,10 +43,10 @@ type=*text/javascript* %3E%3C/script%3E"));
 5、jQuery中的delegate()函数有什么作用？
 
 delegate() 方法为指定的元素（属于被选元素的子元素）添加一个或多个事件处理程序,并规定当这些事件发生时运行的函数。
-使用 delegate() 方法的事件处理程序适用于当前或未来的元素（比如由脚本创建的新元素）。
+使用 delegate() 方法的事件处理程序适用于当前或未来的元素(比如由脚本创建的新元素)。
 
 回答: delegate()会在以下两个情况下使用到:
-    (1)、如果你有一个父元素,需要给其下的子元素添加事件,这时你可以使用delegate()了
+    (1)、如果你有一个父元素,需要给其下的子元素添加事件,这时你可以使用 delegate() 了
         Html代码
         $("ul").delegate("li", "click", function(){
             $(this).hide();
@@ -85,7 +85,7 @@ DOM转jquery : $(DOM)
 
 9、检查<input type="hidden" id="id" name="id" />元素在网页上是否存在。
 
-    if($("#id").length > 0) {   // do someing...    }
+    if($("#id").length > 0) {   // do something...    }
 
 
 10、页面中有三个元素 <div>div标签</div><span>span标签</span><p>p标签</p>
@@ -240,8 +240,8 @@ DOM转jquery : $(DOM)
 
 29、jQuery中的hover()和toggle()有什么区别？
 
-   答:  hover()和toggle()都是jQuery中两个合成事件。
-       hover()方法用于模拟光标悬停事件、toggle()方法是连续点击事件。
+   答:  hover()和 toggle()都是 jQuery 中两个合成事件。
+       hover() 方法用于模拟光标悬停事件、toggle()方法是连续点击事件。
 
 
 30、在ajax中data参数主要有几种方式？
@@ -271,7 +271,6 @@ DOM转jquery : $(DOM)
 
    答: 发送请求前可以修改XMLHttpRequest对象的函数，在beforeSend中如果返回false,可以取消本次的Ajax请求。
        XMLHttpRequest对象是唯一的参数,所以在这个方法里可以做验证。
-
 
 
 35、在jquery中可以替换节点吗？
@@ -305,7 +304,6 @@ DOM转jquery : $(DOM)
 
 
 38、如何找到所有 HTML select 标签的选中项？$('[name=NameOfSelectedTag] :selected')
-
 
 
 39、在jquery中你有没有编写过插件,插件有什么好处？你编写过那些插件？它应该注意那些？

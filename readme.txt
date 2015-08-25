@@ -262,7 +262,7 @@ $(document.body).outerHeight()=$(document.body).height()+padding+margin+border
 
         IE: 不支持 const 关键字。如 const constVar = 32; 在IE中这是语法错误
         Firefox: 支持
-    解决方法: 不使用 const 以 var 代替。
+    解决方法: 不使用 const 以 var 代替
 
     (11) body 对象
 
@@ -430,7 +430,7 @@ E > F 子元素选择器,匹配所有E元素的子元素F
    x-0 或 x*1 //另一种形式
    Number(x)  //使用不带new的数字构造函数进行转换
 
-   对象和函数总是被转换成NaN, undefined也会被转换成NaN, 但null会被转换成0
+   对象和函数总是被转换成NaN, undefined 也会被转换成 NaN, 但 null会被转换成0
    alert(+[]);  //结果为0
    alert(+[1]); //结果为1
    alert(+[1,2]); //结果为NaN
