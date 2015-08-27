@@ -29,7 +29,7 @@ height()、.innerHeight()和.outerHeight()的区别
 height() 是没有计算过的  不包括padding,不包括边框
 innerHeight()  包括padding但不包括border  document.getElementById("div1").clientHeight
 outerHeight() 获取计算后的整个高度 包括padding和border 可以获取到隐藏元素  而原生的offsetHeight  获取不到隐藏元素
-outerHeight(ture) 还可以接受一个参数,该参数代表是否计算外边距,如果为true则表示计算外边距  width+padding+border+margin
+outerHeight(true) 还可以接受一个参数,该参数代表是否计算外边距,如果为true则表示计算外边距  width+padding+border+margin
 
 
 insertBefore()  before() 的区别
@@ -83,7 +83,7 @@ one  事件就只能执行一次
 $('div').one('click',function(){console.log(1)});
 
 
-$("#obj").position().left  //这个方法就是获取到屏幕的左边距离,不管父级有没有定位(可以不用自己写方法获取了,循环递归)
+$("#obj").offset().left  //这个方法就是获取到屏幕的左边距离,不管父级有没有定位(可以不用自己写方法获取了,循环递归)
 js 中 obj.offsetLeft 如果父级没有定位,那就相对于整个页面,父级有定位,那就相对于定位父级
 
 $("#obj").position().left // 如果obj上没有定位,那么在jquery中会把obj看做是一个有定位的元素,那么获取的到的就是有定位
@@ -160,7 +160,7 @@ siblings() 获取兄弟节点 其中也可以传入筛选的参数
 clone() 无参数的情况是潜复制(不复制事件)  clone(true) 深复制(复制事件)
 
 
-slice('起始位置','结束位置(不包括)')   $('li').slice(1,4).css('background','red');
+jquery 中的 slice('起始位置','结束位置(不包括)')   $('li').slice(1,4).css('background','red');
 
 <ul>
     <li></li>

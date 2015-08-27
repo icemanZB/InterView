@@ -72,8 +72,8 @@
         // li.parentNode.children;  找到li的父节点ul下的所有li
    }
    <ul>
-    <li>Coffee</li>
-    <li>Tea</li>
+        <li>Coffee</li>
+        <li>Tea</li>
    </ul>
 
 
@@ -94,7 +94,6 @@
    <!--
    			当里面的div被点击了之后，他会传递到他的父级
    			然后他的父级会传递到他的父级的父级,这个就是事件冒泡
-
    -->
    <style type="text/css">
    	    div { padding: 100px;}
