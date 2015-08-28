@@ -118,7 +118,7 @@ function getRandom(start, end) {
  */
 function parseQueryString(parm) {
 	var sValue = location.search.match(new RegExp("[\?\&]" + parm + "=([^\&]*)(\&?)", "i"));
-	return sValue ? decodeURI(sValue[1]) : decodeURI(sValue);
+	return sValue ? decodeURIComponent(sValue[1]) : decodeURIComponent(sValue);
 }
 
 /**
