@@ -18,9 +18,9 @@ http://www.jb51.net/article/56847.htm 必须看 css篇
 
 3、如何阻止事件冒泡和默认事件
 
-canceBubble   return false
+cancelBubble   return false
 
-4、解释jsonp的原理，以及为什么不是真正的ajax
+4、解释 jsonP 的原理，以及为什么不是真正的ajax
 
    动态创建script标签,回调函数
 
@@ -32,9 +32,9 @@ canceBubble   return false
 
    本地对象为array obj regexp等可以new实例化
 
-   内置对象为gload Math 等不可以实例化的
+   内置对象为 Global Math 等不可以实例化的
 
-   宿主为浏览器自带的document,window 等
+   宿主为浏览器自带的 document,window 等
 
 6、在怪异模式和传统模式下区别，这个平时都是用xhtml模式
 
