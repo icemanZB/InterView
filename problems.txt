@@ -30,8 +30,8 @@ js 浏览器兼容性？？
 前端切页面？？？
 Bootstrap???
 JQuery/Zepto 区别 ？？
-迭代是什么意思？？
-请描述你经历过的JavaScript单元测试？？？
+
+请描述你经历过的JavaScript单元测试？？？  Quint jQuery的单位测试框架
 
 数组排序
 http://wteamxq.com/testDemo/array.html
