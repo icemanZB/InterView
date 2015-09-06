@@ -37,6 +37,25 @@
 
         });
 
+        // 配置信息
+        seajs.config({
+            // 配置别名
+            alias: {
+                m3: './js/module3.js'
+            }
+
+        });
+
+        seajs.use('m3', function (ex) {
+            alert(ex.a);  // ex 调用的其实是 module.exports
+        });
+
+
+        /*seajs.use(['./js/module1.js', './js/module2.js'], function (ex, ex2) {
+            ex.show();
+            ex2.show();
+        });*/
+
 
     </script>
 </head>
