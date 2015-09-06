@@ -53,6 +53,18 @@ function arrayDistinct(arr) {
     return aResult; // JSON.stringify() 把数组转为json
 }
 
+// 高效数组去重
+Array.prototype.unique = function () {
+    var r = [];
+    for (var i = 0, l = this.length; i < l; i++) {
+        for (var j = i + 1; j < l; j++)
+            if (this[i] === this[j]) j = ++i;
+        r.push(this[i]);
+    }
+    return r;
+};
+
+
 /**
  * 快速排序
  * @param  arr
