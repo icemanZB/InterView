@@ -318,3 +318,29 @@ DOM转jquery : $(DOM)
              6)在插件中通过$.extent({})封装全局函数,选择器插件,扩展已有的object对象
                通过$.fn.extend({})封装对象方法插件
 
+40、下面不属于ajax事件的是？  ( C )   解析 ： $.post() 是方法
+    A、ajaxComplete(callback) B、ajaxSuccess(callback) C、$.post(url) D、ajaxSend(callback)
+
+41、如果想在一个指定的元素后添加内容，下面哪个是实现该功能的？    ( D )
+    A、append(content)  B、appendTo(content)  C、insertAfter(content)  D、after(content)
+
+    A.append()在被选元素的结尾插入内容。
+    B.appendTo() 在被选元素的结尾(仍然在内部)插入指定内容。 (是把所有匹配的元素追加到另一个指定的元素元素集合中)
+    C.insertAfter() 在被选元素之后插入 HTML 标记或已有的元素。(将所有匹配元素插入到指定元素的后面)
+    D.after() - 在被选元素之后插入内容  (在指定元素末尾添加   HTML标签或内容)
+
+42、下面哪一个是用来追加到指定元素的末尾的？     ( A )
+    A、insertAfter()  B、append()  C、appendTo()  D、after()
+
+43、在jquery中，如果想要获取当前窗口的宽度值，下面哪个是实现该功能的？     ( A )
+    A、width()  B、width(val)  C、width  D、innerWidth()
+
+
+    $(window).height(); // 浏览器当前窗口可视区域高度
+    $(document).height(); // 浏览器当前窗口文档的高度
+    $(document.body).height();// 浏览器当前窗口文档body的高度
+    $(document.body).outerHeight(true);// 浏览器当前窗口文档body的总高度 包括border padding margin
+    $(window).width(); // 浏览器当前窗口可视区域宽度
+    $(document).width();// 浏览器当前窗口文档对象宽度
+    $(document.body).width();// 浏览器当前窗口文档body的高度
+    $(document.body).outerWidth(true);// 浏览器当前窗口文档body的总宽度 包括border padding margin

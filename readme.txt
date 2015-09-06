@@ -437,3 +437,49 @@ E > F 子元素选择器,匹配所有E元素的子元素F
    alert(+new Array(1)); //结果为0
    alert(+new Array(1,2)); //结果为NaN
 
+40、javascript怎样选中一个checkbox，怎样设置它无效？
+    document.all.cb1[0].disabled = true;
+    document.getElementById("check1").disabled=true;
+
+41、form中的input可以设置为readonly和disable，请问2者有什么区别？
+    readonly不可编辑,但可以选择和复制;值可以传递到后台
+    disabled不能编辑,不能复制,不能选择;值不可以传递到后台
+
+42、for(i=0, j=0; i<10, j<6; i++, j++){
+     k = i + j;
+   }
+
+   i与j都是从0 到5 执行了6次
+
+   第1次：k=i+j=0+0
+   第2次：k=i+j=1+1
+   第3次：k=i+j=2+2
+   第4次：k=i+j=3+3
+   第5次：k=i+j=4+4
+   第6次：k=i+j=5+5
+
+   第6次执行完之后，i++, j++，此时i=6,j=6,因为j=6不再小于6，所以for循环结束
+
+   此时k=i+j=5+5保持不变，即k=10
+
+   结果：10
+
+43、XMLHttpRequest对象是什么？
+   XmlHttp提供客户端同 http服务器通讯的协议。客户端可以通过XmlHttp对象
+   向http服务器发送请求并使用微软XML文档对象模型处理回应
+
+44、下面有关javascript内部对象的描述，正确的有？  ( A、B、C、D )
+    A、History 对象包含用户（在浏览器窗口中）访问过的 URL
+    B、Location 对象包含有关当前 URL 的信息
+    C、Window 对象表示浏览器中打开的窗口
+    D、Navigator 对象包含有关浏览器的信息
+
+45、下面关于IE、FF下面脚本的区别描述错误的是？   ( B、D )
+    A、innerText IE支持，FIREFOX不支持
+    B、document.createElement FIREFOX支持，IE不支持
+    C、setAttribute('class'，'styleClass') FIREFOX支持，IE不支持
+    D、用setAttribute设置事件 FIREFOX不支持，IE支持
+
+    解析 ： IE并不是不支持 setAttribute 这个函数,而是不支持用setAttribute设置某些属性
+           例如对象属性、集合属性、事件属性，也就是说用 setAttribute 设置 style 和 onclick 这些属性在IE中是行不通的。
+           为达到兼容各种浏览器的效果，可以用点符号法来设置Element的对象属性、集合属性和事件属性

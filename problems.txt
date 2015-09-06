@@ -23,3 +23,5 @@ http://www.cnblogs.com/dolphinX/p/3524977.html
 37 http://www.cnblogs.com/dolphinX/p/3529249.html 有待研究
 
 http://www.zhangxinxu.com/wordpress/2013/05/%E7%90%86%E8%A7%A3another-javascript-quiz-%E9%A2%98%E7%9B%AE/
+
+after append appendTo 区别??
