@@ -3,7 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="sea/sea.js"></script>
+    <!-- 加id 通过id的方式来找相应的路径依赖,提高性能 -->
+    <script src="sea/sea.js" id="seajsnode"></script>
     <script>
         // 模块化解决两个问题： 1 变量冲突问题  2 各个js文件依赖问题
         // 官网 http://seajs.org/docs/
@@ -36,6 +37,25 @@
             }
 
         });
+
+        // 配置信息
+        seajs.config({
+            // 配置别名
+            alias: {
+                m3: './js/module3.js'
+            }
+
+        });
+
+        seajs.use('m3', function (ex) {
+            alert(ex.a);  // ex 调用的其实是 module.exports
+        });
+
+
+        /*seajs.use(['./js/module1.js', './js/module2.js'], function (ex, ex2) {
+            ex.show();
+            ex2.show();
+        });*/
 
 
     </script>
