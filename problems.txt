@@ -30,8 +30,13 @@ js 浏览器兼容性？？
 前端切页面？？？
 Bootstrap???
 
+cmd 和 amd 的区别？？？
+nodejs 看下
+准备下自我介绍
 
 请描述你经历过的JavaScript单元测试？？？  Quint jQuery的单位测试框架
+
+css 精灵研究下
 
 数组排序
 http://wteamxq.com/testDemo/array.html
