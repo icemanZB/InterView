@@ -105,3 +105,5 @@ web性能瓶颈
 代码打包都没试过，sass、less、grunt
 
 了解前端 MVC 开发模式
+
+ecma 5
