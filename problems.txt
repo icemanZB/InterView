@@ -43,7 +43,7 @@ position 有多少个属性
 标签语义化
 absolute 父级没有 relative 怎么办
 
-css3 用的最多的  transtition  圆角 图片撑满的那个属性 background-size:contain;
+css3 用的最多的  Transition  圆角 图片撑满的那个属性 background-size:contain;
 box-sizing:border-box;  怪异核模型
 设置元素居中
 nth-of-type()
@@ -56,3 +56,33 @@ js 循环输出最终结果的原理  js是单线程
 
 setTimeout() 原理
 
+// 不要一边创建元素，一边给元素添加属性或事件处理函数
+var aBtn = document.getElementsByTagName('input');
+for (var i=0; i<3; i++) {
+	// 只有第三个函数有事件 innerHTML 会先清空页面上所有的按钮在创建
+	document.body.innerHTML = document.body.innerHTML + '<input type="button" value="按钮" />';
+	// 第一个按钮 = 没有事件处理函数了  0
+	// 第二个按钮 = 没有事件处理函数了	 1
+	// 第三个按钮 = 有事件处理函数了	 1
+	aBtn[i].onclick = function () {
+		alert(123);
+	};
+}
+
+inline-block 加在块元素上是没有效果的
+
+// 第一次for循环为 第一个按钮绑定了事件处理函数，但是函数没有执行，函数执行就只有点击的时候才会执行
+// 后面几次循环都是一样，那么你点击完以后 i 就已经是 3了
+for(var i=0;i<aBtn.length;i++){
+
+    aBtn[i].onclick=function(){
+        alert(i);  // 3
+    }
+
+}
+
+camtasia studio
+手机端H5上传图片
+能调摄像头 本地相册
+
+https://github.com/think2011/localResizeIMG4
