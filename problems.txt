@@ -86,3 +86,22 @@ camtasia studio
 能调摄像头 本地相册
 
 https://github.com/think2011/localResizeIMG4
+
+
+DOM2级事件规定事件包括三个阶段：
+
+1、 事件捕获阶段
+
+2、处于目标阶段
+
+3、事件冒泡阶段
+
+很多人我都会问他，上个项目用到什么技术，为什么用这个，有什么优缺点，有什么替代方案
+对MVC有什么了解，MVVM呢，有没有自己搭过项目架构
+
+HTTP协议
+TCP三次握手
+web性能瓶颈
+代码打包都没试过，sass、less、grunt
+
+了解前端 MVC 开发模式
