@@ -24,10 +24,8 @@ http://www.cnblogs.com/dolphinX/p/3524977.html
 
 http://www.zhangxinxu.com/wordpress/2013/05/%E7%90%86%E8%A7%A3another-javascript-quiz-%E9%A2%98%E7%9B%AE/
 
-after append appendTo 区别??
-熟悉TCP/IP、HTTP基本工作原理？？
+
 js 浏览器兼容性？？
-前端切页面？？？
 Bootstrap???
 
 cmd 和 amd 的区别？？？
@@ -88,6 +86,8 @@ camtasia studio
 https://github.com/think2011/localResizeIMG4
 
 
+http://my.oschina.net/sevenhdu/blog/332014
+http://www.cnblogs.com/yexiaochai/p/3567597.html
 DOM2级事件规定事件包括三个阶段：
 
 1、 事件捕获阶段
@@ -99,6 +99,7 @@ DOM2级事件规定事件包括三个阶段：
 很多人我都会问他，上个项目用到什么技术，为什么用这个，有什么优缺点，有什么替代方案
 对MVC有什么了解，MVVM呢，有没有自己搭过项目架构
 
+熟悉TCP/IP、HTTP基本工作原理？？
 HTTP协议
 TCP三次握手
 web性能瓶颈
@@ -106,4 +107,4 @@ web性能瓶颈
 
 了解前端 MVC 开发模式
 
-ecma 5
+ecma 5  http://www.open-open.com/lib/view/open1331175932452.html
